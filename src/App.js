@@ -1,5 +1,7 @@
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Componente from "./components/Componente";
 
 function App() {
   let nombre = "Angel";
@@ -33,6 +35,31 @@ function App() {
           Learn React
         </a>
       </header>
+      <section>
+        <Componente msg="Hola soy un componente con mensaje por props" />
+        <Componente msg="Hola soy un componente con mensaje por props" />
+        <Componente msg="Hola soy un componente con mensaje por props" />
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
