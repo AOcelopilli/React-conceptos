@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React /* { Component } */ from "react";
 
 /* class Componente extends Component {
   //Las props automaticamente se abdieren a mi componente
@@ -13,6 +13,5 @@ import React, { Component } from "react";
 } */
 
 //funcion expresada con props destructuradas
-const Componente = ({ msg }) => <h2>{msg}. Funcion expresada</h2>;
-
+const Componente = ({ msg }) => <h2>Funcion expresada. {msg}.</h2>;
 export default Componente;

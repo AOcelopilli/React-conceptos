@@ -2,6 +2,9 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Componente from "./components/Componente";
+import Propiedades from "./components/Propiedades";
+import Estado from "./components/Estado";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
 
 function App() {
   let nombre = "Angel";
@@ -34,32 +37,27 @@ function App() {
         >
           Learn React
         </a>
+        <section>
+          <Componente msg="Hola soy un componente con mensaje por props" />
+          <hr />
+          <Propiedades
+            cadena="Esto es un texto"
+            numero={25}
+            booleano={true}
+            arreglo={[1, 2, 3]}
+            objeto={{ nombre: "Angel", apellido: "Pineda" }}
+            elementoReact={<i>Elemento de react</i>}
+            funcion={(num) => num * num}
+            componenteReact={
+              <Componente msg="Soy un componente pasado como prop" />
+            }
+          />
+          <hr />
+          <Estado />
+          <hr />
+          <RenderizadoCondicional />
+        </section>
       </header>
-      <section>
-        <Componente msg="Hola soy un componente con mensaje por props" />
-        <Componente msg="Hola soy un componente con mensaje por props" />
-        <Componente msg="Hola soy un componente con mensaje por props" />
-      </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }
