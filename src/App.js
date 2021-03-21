@@ -11,6 +11,7 @@ import Padre from "./components/ComunicacionComponentes";
 import CicloVida from "./components/CicloVida";
 import AjaxApis from "./components/AjaxApis";
 import ContadorHooks from "./components/ContadorHooks";
+import ScrollHooks from "./components/ScrollHooks";
 
 function App() {
   let nombre = "Angel";
@@ -78,6 +79,8 @@ function App() {
           <AjaxApis />
           <hr />
           <ContadorHooks titulo="seguidores" />
+          <hr />
+          <ScrollHooks />
         </section>
       </header>
     </div>
