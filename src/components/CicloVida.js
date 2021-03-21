@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
 class Reloj extends Component {
-  constructor(props) {
+  /* constructor(props) {
     super(props);
   }
 
   componentWillUnmount() {
     console.log(3, "El componente ha sido eliminado del DOM");
-  }
+  } */
 
   render() {
     return <h3>{this.props.hora}</h3>;
@@ -17,7 +17,7 @@ class Reloj extends Component {
 export default class CicloVida extends Component {
   constructor(props) {
     super(props);
-    console.log(0, "El componente se inicializa, aun no esta en el DOM");
+    // console.log(0, "El componente se inicializa, aun no esta en el DOM");
     this.state = {
       hora: new Date().toLocaleTimeString(),
       visible: false,
@@ -27,12 +27,12 @@ export default class CicloVida extends Component {
   }
 
   componentDidMount() {
-    console.log(1, "El componente ya se encuentra en el DOM");
+    // console.log(1, "El componente ya se encuentra en el DOM");
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(2, "El estado o las props del componente han cambiado");
-    console.log(prevProps, prevState);
+    // console.log(2, "El estado o las props del componente han cambiado");
+    // console.log(prevProps, prevState);
   }
 
   tictac = () => {
@@ -44,7 +44,7 @@ export default class CicloVida extends Component {
   };
 
   iniciar = () => {
-    console.log("Iniciar");
+    // console.log("Iniciar");
     this.tictac();
     this.setState({
       visible: true,
@@ -52,7 +52,7 @@ export default class CicloVida extends Component {
   };
 
   detener = () => {
-    console.log("Detener");
+    // console.log("Detener");
     clearInterval(this.temporizador);
     this.setState({
       visible: false,
@@ -60,10 +60,10 @@ export default class CicloVida extends Component {
   };
 
   render() {
-    console.log(
+    /*     console.log(
       4,
       "El componente se dibuja (o redibuja por algun cambio) en el DOM"
-    );
+    ); */
     return (
       <>
         <h2>Ciclo de vida de los componentes de Clase</h2>

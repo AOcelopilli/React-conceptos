@@ -9,6 +9,8 @@ import RenderizadoElementos from "./components/RenderizadoElementos";
 import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
 import Padre from "./components/ComunicacionComponentes";
 import CicloVida from "./components/CicloVida";
+import AjaxApis from "./components/AjaxApis";
+import ContadorHooks from "./components/ContadorHooks";
 
 function App() {
   let nombre = "Angel";
@@ -72,6 +74,10 @@ function App() {
           <Padre />
           <hr />
           <CicloVida />
+          <hr />
+          <AjaxApis />
+          <hr />
+          <ContadorHooks />
         </section>
       </header>
     </div>
