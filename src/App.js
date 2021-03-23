@@ -15,6 +15,7 @@ import ScrollHooks from "./components/ScrollHooks";
 import RelojHooks from "./components/RelojHooks";
 import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from "./components/HooksPersonalizados";
+import Referencias from "./components/Referencias";
 
 function App() {
   let nombre = "Angel";
@@ -90,6 +91,8 @@ function App() {
           <AjaxHooks />
           <hr />
           <HooksPersonalizados />
+          <hr />
+          <Referencias />
         </section>
       </header>
     </div>
