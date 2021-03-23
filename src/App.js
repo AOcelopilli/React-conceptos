@@ -16,6 +16,7 @@ import RelojHooks from "./components/RelojHooks";
 import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from "./components/HooksPersonalizados";
 import Referencias from "./components/Referencias";
+import Formularios from "./components/Formularios";
 
 function App() {
   let nombre = "Angel";
@@ -25,8 +26,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <label htmlFor="nombre">Nombre</label>
-        <input type="text" id="nombre" />
+        {/* <label htmlFor="nombre">Nombre</label>
+        <input type="text" id="nombre" /> */}
         <h1>{nombre}</h1>
         <p>
           {auth ? "El usuario esta logueado" : "El usuario no esta logueado"}
@@ -93,6 +94,17 @@ function App() {
           <HooksPersonalizados />
           <hr />
           <Referencias />
+          <hr />
+          <Formularios />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </section>
       </header>
     </div>
